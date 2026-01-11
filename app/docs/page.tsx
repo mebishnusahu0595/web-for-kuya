@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function DocsPage() {
   return (
-    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] transition-colors duration-300">
+    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] transition-colors duration-300 pt-20 sm:pt-24">
       <DocsLoader />
       
       {/* Aurora Background */}
@@ -26,8 +26,8 @@ export default function DocsPage() {
       <SplashCursor />
       <Header />
       
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-12 mt-20">
-        <h1 className="text-5xl font-bold text-black dark:text-white mb-8 text-shadow">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white mb-6 sm:mb-8 text-shadow">
           <DecryptedText 
             text="Kuya Data Documentation" 
             animateOn="view"
@@ -38,31 +38,31 @@ export default function DocsPage() {
           />
         </h1>
 
-        <div className="space-y-8 text-black dark:text-white">
-          <section className="glass rounded-2xl p-8">
-            <h2 className="text-3xl font-bold mb-4">What is Kuya?</h2>
-            <p className="text-lg leading-relaxed">
+        <div className="space-y-6 sm:space-y-8 text-black dark:text-white">
+          <section className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">What is Kuya?</h2>
+            <p className="text-base sm:text-lg leading-relaxed">
               <strong>Kuya</strong> is a lightweight and practical Python library built on top of <strong>Pandas</strong>, 
               designed as a <strong>"data analysis assistant."</strong> Its goal is simple: make data cleaning, 
               exploratory analysis, and visualization effortless using just a few lines of code.
             </p>
           </section>
 
-          <section className="glass rounded-2xl p-8">
-            <h2 className="text-3xl font-bold mb-6">Core Components</h2>
-            <p className="mb-6 text-lg">
+          <section className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Core Components</h2>
+            <p className="mb-4 sm:mb-6 text-base sm:text-lg">
               Kuya revolves around the <strong>KuyaDataFrame</strong> class, which extends Pandas' DataFrame 
               and internally integrates four powerful helper modules:
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="glass rounded-xl p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
-                <h4 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <span className="text-2xl">🧹</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
+                <h4 className="font-bold text-base sm:text-lg mb-2 sm:mb-3 flex items-center gap-2">
+                  <span className="text-xl sm:text-2xl">🧽</span>
                   KuyaCleaner
                 </h4>
-                <p className="text-sm mb-3 text-gray-700 dark:text-white">Tools for automated and fast data cleaning:</p>
-                <ul className="list-disc list-inside space-y-1 text-sm">
+                <p className="text-xs sm:text-sm mb-2 sm:mb-3 text-gray-700 dark:text-white">Tools for automated and fast data cleaning:</p>
+                <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm">
                   <li>Missing value handling</li>
                   <li>Data type fixes</li>
                   <li>Outlier detection</li>
@@ -70,26 +70,26 @@ export default function DocsPage() {
                 </ul>
               </div>
 
-              <div className="glass rounded-xl p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
-                <h4 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <span className="text-2xl">📊</span>
+              <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
+                <h4 className="font-bold text-base sm:text-lg mb-2 sm:mb-3 flex items-center gap-2">
+                  <span className="text-xl sm:text-2xl">📊</span>
                   KuyaEDA
                 </h4>
-                <p className="text-sm mb-3 text-gray-700 dark:text-white">A dedicated exploratory data analysis assistant:</p>
-                <ul className="list-disc list-inside space-y-1 text-sm">
+                <p className="text-xs sm:text-sm mb-2 sm:mb-3 text-gray-700 dark:text-white">A dedicated exploratory data analysis assistant:</p>
+                <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm">
                   <li>Summary statistics</li>
                   <li>Missing/unique value inspection</li>
                   <li>Correlation analysis and reports</li>
                 </ul>
               </div>
 
-              <div className="glass rounded-xl p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
-                <h4 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <span className="text-2xl">📈</span>
+              <div className="glass rounded-lg sm:rounded-xl p-4 sm:p-6 hover:bg-white/30 dark:hover:bg-white/10 transition-all">
+                <h4 className="font-bold text-base sm:text-lg mb-2 sm:mb-3 flex items-center gap-2">
+                  <span className="text-xl sm:text-2xl">📈</span>
                   KuyaViz
                 </h4>
-                <p className="text-sm mb-3 text-gray-700 dark:text-white">Easy and elegant visualization helpers built on Matplotlib/Seaborn:</p>
-                <ul className="list-disc list-inside space-y-1 text-sm">
+                <p className="text-xs sm:text-sm mb-2 sm:mb-3 text-gray-700 dark:text-white">Easy and elegant visualization helpers built on Matplotlib/Seaborn:</p>
+                <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm">
                   <li><code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">quick_plot()</code></li>
                   <li><code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">hist()</code>, <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">heatmap()</code>, <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">pairplot()</code></li>
                   <li>One-line visual diagnostics</li>

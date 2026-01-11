@@ -6,15 +6,15 @@ import { useState } from 'react';
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative">
-      <div className="max-w-6xl w-full text-center space-y-8">
-        <div className="space-y-6">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-black dark:text-white tracking-tight animate-float">
+      <div className="max-w-6xl w-full text-center space-y-6 sm:space-y-8">
+        <div className="space-y-4 sm:space-y-6">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-black dark:text-white tracking-tight animate-float">
             Kuya Data
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-light">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 font-light px-4">
             Smart Python Data Analysis Library
           </p>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
             A practical Python library built on top of Pandas — making data cleaning, 
             exploratory analysis, and visualization as easy as 1-2 lines of code
           </p>

@@ -224,28 +224,28 @@ export default function TryOncePage() {
   };
 
   return (
-    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] text-black dark:text-white transition-colors duration-300">
+    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] text-black dark:text-white transition-colors duration-300 pt-20 sm:pt-24">
       <TryOnceLoader />
       <Header />
       
       {/* Editor Container */}
-      <div className="relative z-10 pt-28 px-4 pb-8">
+      <div className="relative z-10 pt-4 sm:pt-8 px-3 sm:px-4 pb-6 sm:pb-8">
         <div className="max-w-7xl mx-auto">
           {/* Title Section */}
-          <div className="text-center mb-8">
-            <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Try Kuya Data
             </h1>
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
+            <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base md:text-lg px-4">
               Interactive Python playground - Write, Run, and Explore
             </p>
           </div>
 
           {/* Quick Examples */}
-          <div className="mb-6">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">QUICK START:</span>
-              <div className="flex gap-2">
+          <div className="mb-4 sm:mb-6">
+            <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 px-1">
+              <span className="text-xs sm:text-sm font-semibold text-gray-600 dark:text-gray-400 whitespace-nowrap">QUICK START:</span>
+              <div className="flex gap-1.5 sm:gap-2 overflow-x-auto pb-2 flex-1 hide-scrollbar">
                 {quickExamples.map((example) => (
                   <button
                     key={example.id}

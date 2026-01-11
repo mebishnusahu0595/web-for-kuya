@@ -11,7 +11,7 @@ import Loader from '@/components/Loader';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] overflow-hidden transition-colors duration-300">
+    <main className="relative min-h-screen bg-white dark:bg-gradient-to-br dark:from-[#0a0e27] dark:via-[#1a1f3a] dark:to-[#0f1629] overflow-hidden transition-colors duration-300 pt-20 sm:pt-24">
       <Loader />
       
       {/* Aurora Background */}

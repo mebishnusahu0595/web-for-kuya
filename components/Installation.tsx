@@ -2,16 +2,16 @@
 
 export default function Installation() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold text-center text-black dark:text-white mb-16 text-shadow">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black dark:text-white mb-8 sm:mb-12 md:mb-16 text-shadow">
           Quick Start
         </h2>
 
-        <div className="space-y-8">
-          <div className="glass rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-black dark:text-white mb-4">Installation</h3>
-            <div className="bg-black dark:bg-gray-950 text-green-400 p-6 rounded-lg font-mono">
+        <div className="space-y-4 sm:space-y-6 md:space-y-8">
+          <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-3 sm:mb-4">Installation</h3>
+            <div className="bg-black dark:bg-gray-950 text-green-400 p-4 sm:p-6 rounded-lg font-mono text-sm sm:text-base overflow-x-auto">
               $ pip install kuya-data
             </div>
             <div className="mt-4 text-center">
@@ -29,9 +29,9 @@ export default function Installation() {
             </div>
           </div>
 
-          <div className="glass rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-black dark:text-white mb-4">Basic Usage</h3>
-            <div className="bg-black dark:bg-gray-950 text-white p-6 rounded-lg font-mono text-sm space-y-2">
+          <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-3 sm:mb-4">Basic Usage</h3>
+            <div className="bg-black dark:bg-gray-950 text-white p-4 sm:p-6 rounded-lg font-mono text-xs sm:text-sm space-y-2 overflow-x-auto">
               <div className="text-gray-400"># Import and load data</div>
               <div><span className="text-purple-400">import</span> kuya</div>
               <div>df = kuya.load(<span className="text-yellow-300">&quot;data.csv&quot;</span>)</div>
@@ -49,17 +49,17 @@ export default function Installation() {
             </div>
           </div>
 
-          <div className="glass rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-black dark:text-white mb-4">CLI Support</h3>
-            <div className="bg-black dark:bg-gray-950 text-green-400 p-6 rounded-lg font-mono text-sm space-y-2">
+          <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-3 sm:mb-4">CLI Support</h3>
+            <div className="bg-black dark:bg-gray-950 text-green-400 p-4 sm:p-6 rounded-lg font-mono text-xs sm:text-sm space-y-2 overflow-x-auto">
               <div>$ kuya analyze data.csv</div>
               <div>$ kuya clean data.csv --output cleaned.csv</div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="glass rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-black dark:text-white mb-2">4</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+            <div className="glass rounded-xl p-4 sm:p-6 text-center">
+              <div className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2">4</div>
               <div className="text-gray-700 dark:text-gray-300">Core Modules</div>
             </div>
             <div className="glass rounded-xl p-6 text-center">
