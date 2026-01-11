@@ -50,7 +50,7 @@ export default function DocsLoader() {
           delay={50}
           animateBy="characters"
           direction="top"
-          className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+          className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent"
         />
       </div>
     </div>
